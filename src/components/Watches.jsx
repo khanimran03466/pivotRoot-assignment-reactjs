@@ -31,7 +31,12 @@ const Watches = () => {
               <div className="tags">
                 <img src={newtag} alt="new tag icon" />
                 <img src={badgeIcon} alt="badge-icon.png" />
-                <img src={editorChoiceIcon} alt="badge-icon.png" />
+                <div className="tooltip">
+                  <img src={editorChoiceIcon} alt="badge-icon.png" />
+                  <div className="tool-tip-cont">
+                    <p>Editor Choice</p>
+                  </div>
+                </div>
               </div>
             </div>
 
