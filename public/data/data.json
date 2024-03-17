@@ -1,0 +1,98 @@
+{
+  "products": [
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM ",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    },
+
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    },
+
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    },
+
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    },
+
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    },
+
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    },
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    },
+
+    {
+      "imgURL": "watch-img.png",
+      "hoverImg": "hover-img.png",
+      "title": "JAEGER-LECOULTRE",
+      "description": "Jaeger-Lecoulter Master Tourbillon 41 MM",
+      "price": "2100000",
+      "discount": "20% off",
+      "RealPrice": "5759200",
+      "emi": "EMI Available",
+      "like": "30"
+    }
+  ]
+}
