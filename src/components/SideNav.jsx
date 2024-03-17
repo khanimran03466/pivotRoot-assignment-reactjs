@@ -2,7 +2,7 @@ import Avaibility from "./fiters-components/Avaibility";
 import Brands from "./fiters-components/Brands";
 import CaseSize from "./fiters-components/CaseSize";
 import Gender from "./fiters-components/Gender";
-import watchLogo from "/src/images/watch-logo.png";
+import watchLogo from "/images/watch-logo.png";
 
 import { IoFilter } from "react-icons/io5";
 

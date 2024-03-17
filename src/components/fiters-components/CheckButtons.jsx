@@ -4,7 +4,7 @@ const CheckButtons = ({ id, label, borderDash }) => {
   return (
     <div className={`check-wrraper ${borderDash}`}>
       <input type="checkbox" id={id} />
-      <label for={id}> {label} </label>
+      <label htmlFor={id}> {label} </label>
     </div>
   );
 };

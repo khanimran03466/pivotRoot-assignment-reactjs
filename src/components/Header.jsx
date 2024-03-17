@@ -1,6 +1,6 @@
 import React from 'react';
 
-import indianFlagIcon from "/src/images/flag-icon.jpg";
+import indianFlagIcon from "/images/flag-icon.jpg";
 import { GoPerson } from "react-icons/go";
 import { IoHeartOutline } from "react-icons/io5";
 import { SlHandbag } from "react-icons/sl";

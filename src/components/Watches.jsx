@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import newtag from "/src/images/new-icon.png";
-import badgeIcon from "/src/images/badge-icon.png";
-import editorChoiceIcon from "/src/images/editor-choice-icon.png";
-import roketIcon from "/src/images/roket-icon.png";
+import newtag from "/images/new-icon.png";
+import badgeIcon from "/images/badge-icon.png";
+import editorChoiceIcon from "/images/editor-choice-icon.png";
+import roketIcon from "/images/roket-icon.png";
 import { FaRegHeart } from "react-icons/fa6";
 
 
@@ -36,8 +36,8 @@ const Watches = () => {
             </div>
 
             <div className="watch-image">
-                <img src={item.hoverImg} alt="watch image" />
-                <img className="ho-active"src={item.hoverImg} alt="" />
+                <img src={`/images/${item.imgURL}`} alt="watch image" />
+                <img className="ho-active"src={`/images/${item.hoverImg}`} alt="" />
             </div>
 
             <div className="hover-effect">

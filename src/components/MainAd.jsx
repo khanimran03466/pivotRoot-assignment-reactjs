@@ -1,4 +1,4 @@
-import AdBanner from "https://ibb.co/kXDywkn";
+import AdBanner from "/images/banner-img.png";
 const MainAd = () => {
   return (
     <div className="main-ad">
