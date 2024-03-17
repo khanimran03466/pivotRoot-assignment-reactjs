@@ -36,8 +36,8 @@ const Watches = () => {
             </div>
 
             <div className="watch-image">
-                <img src={`/src/images/${item.imgURL}`} alt="watch image" />
-                <img className="ho-active"src={`/src/images/${item.hoverImg}`} alt="" />
+                <img src={item.hoverImg} alt="watch image" />
+                <img className="ho-active"src={item.hoverImg} alt="" />
             </div>
 
             <div className="hover-effect">
