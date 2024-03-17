@@ -11,8 +11,8 @@ import { BiSearch } from "react-icons/bi";
 
 const Header = () => {
   return (
-    <header>
-        <div className="container">
+    <header className='container'>
+        
         <div className="header-top">
             <div className="header-top-left">
                 <ul>
@@ -51,7 +51,6 @@ const Header = () => {
                     <BiSearch />
                 </div>
             </div>
-        </div>
         </div>
     </header>
   )
