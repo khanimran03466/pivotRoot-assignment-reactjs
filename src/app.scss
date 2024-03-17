@@ -768,9 +768,16 @@ input[type="checkbox"]:checked + label::before {
     font-size: 14px;
   }
   .emi-abv .card-bottom-sec img,
-  .emi-abv .card-bottom-sec svg,
-  .emi-abv .card-bottom-sec img {
+  .emi-abv .card-bottom-sec svg {
     font-size: 14px;
+  }
+  .emi-abv .card-bottom-sec img {
+    max-width: 14px;
+  }
+
+  .emi-abv .card-bottom-sec {
+    padding: 5px 0px;
+    margin: 0 10px;
   }
   .emi-abv p {
     font-size: 10px;
@@ -801,5 +808,5 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+}
