@@ -15,10 +15,7 @@ const SideNav = () => {
       </div>
 
       <div className="filter-sec">
-        <span>
-          {" "}
-          <IoFilter /> Filter{" "}
-        </span>
+        <span><IoFilter />Filter</span>
         <a href="#"> Clear All </a>
       </div>
 
