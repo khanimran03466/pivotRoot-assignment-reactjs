@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import indianFlagIcon from "/images/flag-icon.jpg";
 import { GoPerson } from "react-icons/go";
@@ -10,6 +10,12 @@ import { BiSearch } from "react-icons/bi";
 
 
 const Header = () => {
+
+const [active, setActive] = useState("");
+
+const activeNav = () => {
+    setActive(!active);
+}
   return (
     <header className='container'>
         
@@ -32,7 +38,7 @@ const Header = () => {
         </div>
         <div className="header-bottom">
             <div className="header-bottom-left">
-                <nav>
+                <nav className={`${active? "active":""}`}>
                     <ul>
                         <li> <a href="#"> Just In </a> </li>
                         <li> <a href="#"> Brand </a> </li>
@@ -46,6 +52,9 @@ const Header = () => {
                 </nav>
             </div>
             <div className="header-bottom-right">
+                <div class={`hamburger ${active? "active":""}`} onClick={activeNav}>
+                    <div class="toggle-buton"></div>
+                </div>
                 <div className="search-input-wrraper">
                     <input type="text" placeholder='What are you looking for' />
                     <BiSearch />
