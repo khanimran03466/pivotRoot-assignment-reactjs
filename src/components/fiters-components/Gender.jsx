@@ -1,7 +1,11 @@
 import React from "react";
 import CheckButtons from "./CheckButtons";
 
-const Gender = ({compName}) => {
+const Gender = ({ compName, onChangeHandler, data }) => {
+  const onChange = (id, value) => {
+    onChangeHandler(compName, id, value);
+  };
+
   return (
     <div className="case-size">
       <div className="case-head">
@@ -10,10 +14,24 @@ const Gender = ({compName}) => {
       </div>
 
       <div className="case-size-body column">
-        <CheckButtons id="Male" label="Male"/>
-        <CheckButtons id="Female" label="Female"/>
-        <CheckButtons id="Unisex" label="Unisex"/>
-        
+        <CheckButtons
+          checked={data[compName]?.includes("Male")}
+          id="Male"
+          label="Male"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Female")}
+          id="Female"
+          label="Female"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Unisex")}
+          id="Unisex"
+          label="Unisex"
+          onChange={onChange}
+        />
       </div>
     </div>
   );

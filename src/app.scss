@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: #fff;
+}
+
 a {
   font-weight: 500;
   color: #232736;
@@ -42,6 +46,7 @@ body {
   margin: 0;
   list-style-type: none;
   font-family: "Assistant", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -50,6 +55,7 @@ body {
 
 .container {
   max-width: calc(1440px + 30px);
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -197,6 +203,7 @@ header {
     border: none;
     padding: 12px;
     width: 100%;
+    background-color: #fff;
 
     &:focus {
       outline: none;
@@ -204,7 +211,7 @@ header {
   }
 
   svg {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     cursor: pointer;
     padding-right: 15px;
   }
@@ -249,6 +256,8 @@ header {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 0 7px;
+    background-color: #fff;
+    color: var(--color);
 
     &:focus {
       outline: none;
@@ -268,11 +277,23 @@ header {
   border: 1px solid #dacdcd;
   border-radius: 10px;
   padding: 15px;
-  max-width: calc(33% - 50px);
-  width: 100%;
+  max-width: calc(33.3333% - 24px);
   text-align: center;
   position: relative;
   overflow: hidden;
+  flex-grow: 1;
+  &.ad-card {
+    padding: 0px;
+  }
+  .ad {
+    height: 100%;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 
   .pre-owned {
     display: flex;
@@ -500,6 +521,7 @@ header {
       background: transparent;
       font-size: 40px;
       cursor: pointer;
+      color: var(--color);
     }
   }
 }
@@ -512,12 +534,12 @@ header {
   border-bottom: 1px solid #ededed;
 
   .check-wrraper {
-    flex: 0 0 calc(33.33% - 30px);
     display: flex;
     align-items: center;
     font-size: 14px;
     white-space: nowrap;
     position: relative;
+    flex-grow: 1;
 
     input {
       margin-right: 3px;
@@ -527,7 +549,8 @@ header {
   .check-wrraper.dashed {
     border: 1px dashed #dacdcd;
     padding: 2px 8px;
-    flex-grow: 1;
+    min-width: 90px;
+    max-width: 136px;
   }
 }
 
@@ -742,7 +765,11 @@ input[type="checkbox"]:checked + label::before {
     font-size: 1rem;
   }
   .card {
-    max-width: calc(50% - 50px);
+    max-width: calc(50% - 10px);
+  }
+
+  .card .pre-owned img {
+    margin: 0 2px;
   }
 }
 
@@ -808,6 +835,10 @@ input[type="checkbox"]:checked + label::before {
   .case-size .case-head h2 {
     font-size: 14px;
   }
+
+  .card {
+    max-width: calc(60% - 70px);
+  }
   .card .pre-owned img {
     max-width: 15px;
   }
@@ -845,6 +876,10 @@ input[type="checkbox"]:checked + label::before {
   .case-size .case-head h2 {
     font-size: 10px;
   }
+
+  .case-size-body .check-wrraper.dashed {
+    min-width: auto;
+  }
   .case-size-body .check-wrraper {
     font-size: 10px;
   }
@@ -865,7 +900,7 @@ input[type="checkbox"]:checked + label::before {
     gap: 5px;
   }
   .card {
-    max-width: calc(50% - 15px);
+    max-width: calc(49%);
     padding: 5px;
   }
   .card .pre-owned {
@@ -931,4 +966,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 376px) {
+  .card {
+    max-width: 48%;
+  }
 }

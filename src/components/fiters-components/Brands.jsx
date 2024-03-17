@@ -1,7 +1,11 @@
 import React from "react";
 import CheckButtons from "./CheckButtons";
 
-const Brands = ({compName}) => {
+const Brands = ({ compName, onChangeHandler, data }) => {
+  const onChange = (id, value) => {
+    onChangeHandler(compName, id, value);
+  };
+
   return (
     <div className="case-size">
       <div className="case-head">
@@ -10,14 +14,48 @@ const Brands = ({compName}) => {
       </div>
 
       <div className="case-size-body column">
-        <CheckButtons id="Rolex" label="Rolex"/>
-        <CheckButtons id="Apple" label="Apple"/>
-        <CheckButtons id="Aspen" label="Aspen"/>
-        <CheckButtons id="Armanin Exchange" label="Armanin Exchange"/>
-        <CheckButtons id="Ball" label="Ball"/>
-        <CheckButtons id="Hugo Boss" label="Hugo Boss"/>
-        <CheckButtons id="Chanel" label="Chanel"/>
-        
+        <CheckButtons
+          checked={data[compName]?.includes("Rolex")}
+          id="Rolex"
+          label="Rolex"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Apple")}
+          id="Apple"
+          label="Apple"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Aspen")}
+          id="Aspen"
+          label="Aspen"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Armanin Exchange")}
+          id="Armanin Exchange"
+          label="Armanin Exchange"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Ball")}
+          id="Ball"
+          label="Ball"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Hugo Boss")}
+          id="Hugo Boss"
+          label="Hugo Boss"
+          onChange={onChange}
+        />
+        <CheckButtons
+          checked={data[compName]?.includes("Chanel")}
+          id="Chanel"
+          label="Chanel"
+          onChange={onChange}
+        />
       </div>
     </div>
   );
