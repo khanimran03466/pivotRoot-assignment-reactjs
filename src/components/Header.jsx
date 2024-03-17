@@ -11,7 +11,7 @@ import { BiSearch } from "react-icons/bi";
 
 const Header = () => {
 
-const [active, setActive] = useState(false);
+const [active, setActive] = useState("");
 
 const activeNav = () => {
     setActive(!active);
@@ -39,7 +39,7 @@ const activeNav = () => {
         <div className="header-bottom">
             <div className="header-bottom-left">
                 <nav className={`${active? "active":""}`}>
-                    <ul onClick={activeNav}>
+                    <ul>
                         <li> <a href="#"> Just In </a> </li>
                         <li> <a href="#"> Brand </a> </li>
                         <li> <a href="#"> Women </a> </li>
