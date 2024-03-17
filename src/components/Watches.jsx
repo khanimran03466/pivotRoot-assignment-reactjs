@@ -11,11 +11,11 @@ const Watches = ({ data = [] }) => {
       <ul>
         {data.map((item, index) => (
           <li
-            className={`card ${item.type === "AD" ? "ad-card" : ""}`}
+            className={`card ${item.type === "AD" ? "add-card" : ""}`}
             key={index}
           >
             {item.type === "AD" ? (
-              <div className="ad">
+              <div className="add">
                 <img src={adImage} alt="" />
               </div>
             ) : (
